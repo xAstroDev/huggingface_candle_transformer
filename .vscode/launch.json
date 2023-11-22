@@ -1,0 +1,304 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'huggingface_candle_transformer'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "huggingface_candle_transformer",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'run_encoder'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=run_encoder",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_encoder",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'run_encoder'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=run_encoder",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_encoder",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'run_encoder_block'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=run_encoder_block",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_encoder_block",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'run_encoder_block'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=run_encoder_block",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_encoder_block",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'run_attention'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=run_attention",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_attention",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'run_attention'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=run_attention",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_attention",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'run_pos_embed_sin'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=run_pos_embed_sin",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_pos_embed_sin",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'run_pos_embed_sin'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=run_pos_embed_sin",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_pos_embed_sin",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'run_decoder_block'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=run_decoder_block",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_decoder_block",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'run_decoder_block'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=run_decoder_block",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_decoder_block",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'run_selfattention'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=run_selfattention",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_selfattention",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'run_selfattention'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=run_selfattention",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_selfattention",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'run_maskedattention'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=run_maskedattention",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_maskedattention",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'run_maskedattention'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=run_maskedattention",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_maskedattention",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'run_transformer",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=run_transformer",
+                    "--package=huggingface_candle_transformer"
+                ],
+                "filter": {
+                    "name": "run_transformer",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+    ]
+}
