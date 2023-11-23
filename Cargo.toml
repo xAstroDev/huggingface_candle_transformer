@@ -8,18 +8,6 @@ edition = "2021"
 # change origin to scandisk
 
 [dependencies]
-omni_macros = { path = "../omni/omni_macros" }
-omni_evo = { path = "../omni/omni_evo" }
-omni_candle_bf16 = { path = "../omni_candle_bf16" }
-omni_candle_i64 = { path = "../omni_candle_i64" }
-omni_candle_common = { path = "../omni_candle_common" }
-serde = "1.0.188"
-serde_derive = "1.0.188"
 rand_distr = "0.4.3"
-shuffle = "0.1.7"
-rand = "0.8.5"
-serde_json = "1.0.105"
-atomicwrites = "0.4.1"
-tempfile = "3.7"
 candle-core = { git = "https://github.com/huggingface/candle.git", version = "0.3" }
 candle-nn = { git = "https://github.com/huggingface/candle.git", version = "0.3" }
